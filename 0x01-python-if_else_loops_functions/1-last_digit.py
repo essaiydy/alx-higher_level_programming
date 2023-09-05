@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-lsd = int(f"{number}"[-1])
+lsd = int(str(number)[-1])
 if number > 0:
     lsd = lsd
 else:
