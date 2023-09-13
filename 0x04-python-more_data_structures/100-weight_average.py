@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def weight_average(my_list=[]):
     pro = 1
     sume = 0
