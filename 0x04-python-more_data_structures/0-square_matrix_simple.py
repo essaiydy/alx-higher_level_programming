@@ -5,4 +5,4 @@ def square_matrix_simple(matrix=[]):
     for i in matrix:
         x = list(map(lambda v: v ** 2, i))
         new.append(x)
-        return new
+    return new
