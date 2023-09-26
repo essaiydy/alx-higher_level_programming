@@ -5,7 +5,7 @@
 class Square:
     '''the __init__ function'''
 
-    size: def __init__(self, size=0):
+    def __init__(self, size=0):
         if type(size) is int:
             if size > 0:
                 self.__size = size
