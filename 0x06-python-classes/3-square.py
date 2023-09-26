@@ -6,14 +6,12 @@ class Square:
     '''the __init__ function'''
 
     def __init__(self, size=0):
-        if type(size) is int:
-            if size > 0:
-                self.__size = size
-            else:
-                raise ValueError("size must be >= 0")
-        else:
+        if not type(size) is int:
             raise TypeError("size must be an integer")
-            '''return the area'''
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
+        '''return the area'''
 
     def area(self):
         return (self.__size * self.__size)
