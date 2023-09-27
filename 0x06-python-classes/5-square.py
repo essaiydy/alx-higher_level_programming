@@ -30,7 +30,7 @@ class Square:
         '''print an squal using #'''
         for i in range(self.__size):
             for j in range(self.__size):
-                print("#")
+                print("#", end="")
             print()
-        if size == 0:
+        if self.__size == 0:
             print("")
