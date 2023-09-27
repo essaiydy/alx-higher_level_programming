@@ -9,7 +9,6 @@ class Square:
 
     @property
     def size(self):
-        '''return size'''
         return(self.__size)
 
     @size.setter
@@ -21,11 +20,9 @@ class Square:
         self.__size = value
 
     def area(self):
-        '''count area'''
         return (self.__size * self.__size)
 
     def my_print(self):
-        '''print an squal using #'''
         for i in range(self.__size):
             for j in range(self.__size):
                 print("#", end="")
