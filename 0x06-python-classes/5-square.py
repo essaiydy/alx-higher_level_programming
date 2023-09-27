@@ -29,7 +29,8 @@ class Square:
     def my_print(self):
         '''print an squal using #'''
         for i in range(self.__size):
-        for j in range(self.__size):
-           print("#")
-        if size = 0:
+            for j in range(self.__size):
+                print("#")
+            print()
+        if size == 0:
             print("")
