@@ -2,7 +2,6 @@
 '''class sqaur'''
 
 
-
 class Square:
     '''the init func'''
     def __init__(self, size=0):
