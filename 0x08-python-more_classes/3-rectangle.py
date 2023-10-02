@@ -52,4 +52,4 @@ class Rectangle:
                 for j in range(self.__width):
                     rect += '#'
                 rect += "\n"
-            return rect.strip()
+            return rect[:-1]
