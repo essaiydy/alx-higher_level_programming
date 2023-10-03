@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    "element of my class"""
+    """element of my class"""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
