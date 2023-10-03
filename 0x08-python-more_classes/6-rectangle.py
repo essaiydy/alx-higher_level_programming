@@ -4,11 +4,9 @@
 
 class Rectangle:
     "element of my class"""
-    n = 0
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        self.n = self.n + 1
 
     @property
     def width(self):
@@ -61,5 +59,5 @@ class Rectangle:
         return (rect)
 
     def __del__(self):
-        del self.n
+        del self
      print("Bye rectangle...")
