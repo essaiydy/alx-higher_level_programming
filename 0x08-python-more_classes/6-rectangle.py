@@ -35,8 +35,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-
-    def area(self):
+        def area(self):
         return int((self.__width) * (self.__height))
 
     def perimeter(self):
@@ -61,4 +60,5 @@ class Rectangle:
         rect = f"Rectangle({self.width}, {self.height})"
         return (rect)
     def __del__(self):
+        self.n--
      print("Bye rectangle...")
