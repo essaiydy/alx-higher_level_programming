@@ -59,6 +59,8 @@ class Rectangle:
         "creat a new object using evel()"
         rect = f"Rectangle({self.width}, {self.height})"
         return (rect)
+
     def __del__(self):
-        self.n = self.n - 1
+        del self.n
+        self.n--
      print("Bye rectangle...")
