@@ -1,0 +1,71 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+add negative and positive number:
+
+>>> add_integer(1, -1)
+0
+
+add negative and 0 :
+
+>>> add_integer(-1, 0)
+-1
+
+add to negative number:
+
+>>> add_integer(-1,-2)
+-3
+
+add to negative float:
+
+>>> add_integer(-5.4, -6.8)
+-11
+
+add just one numer:
+
+>>> add_integer(5)
+103
+
+add too big numbers:
+
+>>> add_integer(1000000, 2000000)
+3000000
+
+add too big negative numbers:
+
+>>> add_integer(-10000, -40000)
+-50000
+
+add too negative float:
+
+>>> add_integer(-0.5, -0.8)
+0
+>>> add_integer("5", 5)
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+>>> add_integer("iman", "ayoub")
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+>>> add_integer(2.3, None)
+Traceback (most recent call last):
+  ...
+TypeError: b must be an integer
+>>> add_integer(None, 2)
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+>>> add_integer(None)
+Traceback (most recent call last):
+  ...
+TypeError: a must be an integer
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+  ...
+OverflowError: cannot convert float infinity to integer
