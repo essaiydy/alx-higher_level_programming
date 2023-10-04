@@ -62,11 +62,11 @@ class Rectangle:
             return("")
         else:
             rect = ""
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    rect += str(self.print_symbol)
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rect += str(self.print_symbol)
                 rect += "\n"
-            return rect[:-1]
+        return rect[:-1]
 
     def __repr__(self):
         "creat a new object using evel()"
