@@ -6,6 +6,7 @@ class Rectangle:
     "element of my class"""
 
     n = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -61,5 +62,6 @@ class Rectangle:
         "creat a new object using evel()"
         rect = f"Rectangle({self.width}, {self.height})"
         return (rect)
+
     def __del__(self):
-     print("Bye rectangle...")
+        print("Bye rectangle...")
