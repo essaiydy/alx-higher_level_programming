@@ -4,6 +4,7 @@
 
 def lookup(obj):
     '''the list returned'''
+
 {
         return(dir(obj))
 }
