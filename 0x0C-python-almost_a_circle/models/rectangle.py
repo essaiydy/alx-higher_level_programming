@@ -83,10 +83,12 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
+    '''public method'''
     def area(self):
         '''area'''
         return self.width * self.height
 
+    '''public method'''
     def display(self):
         '''display'''
         for v in range(self.y):
@@ -94,6 +96,7 @@ class Rectangle(Base):
         for i in range(self.height):
             print(" " * self.x + "#" * self.width)
 
+    '''public method'''
     def update(self, *args, **kwargs):
         '''Update the Rectangle.
 
@@ -117,11 +120,13 @@ class Rectangle(Base):
                 if key in lis:
                     setattr(self, key, kwargs[key])
 
+    '''public method'''
     def to_dictionary(self):
         '''Return the dictionary representation of a Rectangle.'''
         return {"id": self.id, "width": self.width,
                 "height": self.height, "x": self.x, "y": self.y}
 
+    '''public method'''
     def __str__(self):
         '''Return the print() and str() representation of the Rectangle.'''
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
