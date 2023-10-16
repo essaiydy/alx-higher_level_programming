@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """The module: test_base"""
-
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
@@ -12,6 +11,7 @@ class BaseTest1(unittest.TestCase):
 
     def setUp(self):
         Base._Base__nb_objects = 0
+
     def test_id_squa(self):
         s1 = Square(5)
         self.assertEqual(s1.id, 1)
