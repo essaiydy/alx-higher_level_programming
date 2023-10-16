@@ -80,7 +80,7 @@ class TestBase_to_json_string(unittest.TestCase):
         r = Rectangle(10, 7, 2, 8, 6)
         self.assertEqual(str, type(Base.to_json_string([r.to_dictionary()])))
 
-     def test_to_json_string_rectangle_one_dict(self):
+    def test_to_json_string_rectangle_one_dict(self):
         r = Rectangle(10, 7, 2, 8, 6)
         self.assertTrue(len(Base.to_json_string([r.to_dictionary()])) == 53)
 
@@ -119,7 +119,7 @@ class TestBase_to_json_string(unittest.TestCase):
             Base.to_json_string([], 1)
 
     
-    class TestBase_save_to_file(unittest.TestCase):
+class TestBase_save_to_file(unittest.TestCase):
     """Unittests for testing save_to_file method of Base class."""
 
     @classmethod
