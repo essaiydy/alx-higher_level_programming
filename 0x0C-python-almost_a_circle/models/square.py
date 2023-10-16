@@ -4,18 +4,21 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    '''class square'''
+    """classs square"""
 
     def __init__(self, size, x=0, y=0, id=None):
+        """init func"""
         super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
+        """size"""
         return self.width
         return self.height
 
     @size.setter
     def size(self, value):
+        """size"""
         self.width = value
         self.height = value
 
