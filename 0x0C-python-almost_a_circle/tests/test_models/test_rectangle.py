@@ -7,12 +7,15 @@ from models.square import Square
 
 
 class BaseTest1(unittest.TestCase):
-    """BaseTest: A class to test the Base class"""
+    '''BaseTest: A class to test the Base class'''
 
     def setUp(self):
+        '''Method invoked for each test'''
         Base._Base__nb_objects = 0
 
     def test_id_squa(self):
+        ''' Test_id: To test the id of instance
+        accordin to id if it None or not'''
         s1 = Square(5)
         self.assertEqual(s1.id, 1)
         s2 = Square(5, 2, 4, 1)
