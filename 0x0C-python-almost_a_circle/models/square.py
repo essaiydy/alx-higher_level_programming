@@ -47,8 +47,7 @@ class Square(Rectangle):
         '''dect representation'''
         return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.x}
 
-     
     def __str__(self):
         """string representation"""
-        return "[Square] ({}) {}/{} - {}".format(self.id,
-                self.x, self.y, self.width)
+        return "[Square] ({}) {}/{} - {}".format(
+                self.id, self.x, self.y, self.width)
