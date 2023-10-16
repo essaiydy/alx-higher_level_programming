@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """traitement"""
-
-
 from models.base import Base
+
 
 class Rectangle(Base):
     '''class rectangle'''
