@@ -9,12 +9,12 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """init func"""
         super().__init__(size, size, x, y, id)
+        self.size = size
 
     @property
     def size(self):
         """size"""
         return self.width
-        return self.height
 
     @size.setter
     def size(self, value):
@@ -37,7 +37,7 @@ class Square(Rectangle):
         if args:
             i = 0
             while i < len(args):
-                setattr(self, lis[i], int(args[i]))
+                setattr(self, lis[i], args[i])
                 i += 1
         else:
             for key, value in kwargs.items():
