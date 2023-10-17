@@ -27,3 +27,6 @@ class BaseTest1(unittest.TestCase):
         self.assertEqual(s4.id, -15)
         s5 = Square(5, 24)
         self.assertEqual(s5.id, 4)
+
+if __name__ == '__main__':
+    unittest.main()
