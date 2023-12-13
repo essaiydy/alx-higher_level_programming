@@ -9,7 +9,7 @@ if (width)
 	{
 		for(let i = 0; i < width; i++){
 			let row = '';
-			for(let i = 1; i <= width; i++){
+			for(let j = 1; j <= width; j++){
 				row += 'x';
 			} console.log(row);
 		}
