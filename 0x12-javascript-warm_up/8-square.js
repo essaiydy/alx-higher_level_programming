@@ -10,7 +10,7 @@ if (width)
 		for(let i = 0; i < width; i++){
 			let row = '';
 			for(let i = 1; i <= width; i++){
-				row += '#';
+				row += 'x';
 			} console.log(row);
 		}
 	}
