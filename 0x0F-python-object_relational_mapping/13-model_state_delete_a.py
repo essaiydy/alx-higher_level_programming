@@ -15,12 +15,11 @@ if __name__ == '__main__':
 
     session = sessionmaker(bind=engine)
     Session = session()
-
     paterne = r'.*a.*'
-
     rows = Session.query(State).all()
 
     for row in rows:
         if re.match(paterne, row.name):
             Session.delete(row)
+    
     Session.commit()
