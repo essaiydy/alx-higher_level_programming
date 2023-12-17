@@ -2,8 +2,8 @@
 """module: 12-model_state_update_id_2"""
 
 
-import re
 from model_state import Base, State
+from model_city import City
 from sqlalchemy import create_engine as eng
 import sys
 from sqlalchemy.orm import sessionmaker as se
@@ -16,11 +16,10 @@ if __name__ == '__main__':
     Session = se(bind=conect)
     session = Session()
 
-    states = session.query(State).filter(State.name.like('%a%'))
+    StatAndCity = session.query(City, State.name).filter(
+            City.state_id == State.id).all()
 
-    for state in states:
-        session.delete(state)
-
-    session.commit()
+    for city, state in StatAndCity:
+        print("{}: ({}) {}".format(state, city.id, city.name))
 
     session.close()
