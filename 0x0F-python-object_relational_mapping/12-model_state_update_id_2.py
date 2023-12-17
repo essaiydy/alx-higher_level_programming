@@ -19,5 +19,5 @@ if __name__ == '__main__':
     rows = Session.query(State).filter_by(id=2).first()
 
     rows.name = 'New Mexico'
-    
+
     Session.commit()
