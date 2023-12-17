@@ -22,7 +22,7 @@ if __name__ == '__main__':
     rows = cur.fetchall()
 
     total = ', '.join(row[0] for row in rows)
-    
+ 
     print(total)
 
     cur.close()
