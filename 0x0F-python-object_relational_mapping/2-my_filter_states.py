@@ -16,7 +16,8 @@ if __name__ == '__main__':
             db=sys.argv[3])
 
     cursor = db.cursor()
-    cursor.execute("select * from states where name like binary '{}'".format(sys.argv[4]))
+    cursor.execute("select * from states \
+            where name like binary '{}'".format(sys.argv[4]))
 
     rows = cursor.fetchall()
 
