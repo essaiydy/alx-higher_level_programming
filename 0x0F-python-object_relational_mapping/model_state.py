@@ -7,10 +7,10 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
-class State(Base):
-    '''this is class'''
 
+class State(Base):
+    '''this is a class to build a table'''
     __tablename__ = 'states'
 
-    id = Column(Integer, primary_key=True, autoincremet=True)
+    id = Column(Integer, primary_key=True, autoincremet=True, nullable=False)
     name = Column(String(128), nullable=False)
