@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     session = sessionmaker(bind=engine)
 
-    rows = session().query(State).filter(State.name == '%a%')
+    rows = session().query(State).filter(State.name.like('%a%'))
 
     for row in rows:
         print("{}: {}".format(row.id, row.name))
