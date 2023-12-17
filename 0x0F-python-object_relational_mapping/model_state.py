@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Write a python file that contains the class definition of a State'''
+"""Module model_state"""
 
 
 from sqlalchemy import Column, Integer, String
@@ -9,8 +9,8 @@ Base = declarative_base()
 
 
 class State(Base):
-    '''this is a class to build a table'''
+    """a class to build a table named states"""
     __tablename__ = 'states'
 
-    id = Column(Integer, primary_key=True, autoincremet=True, nullable=False)
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     name = Column(String(128), nullable=False)
