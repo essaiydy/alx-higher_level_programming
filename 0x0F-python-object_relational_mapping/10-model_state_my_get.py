@@ -15,11 +15,9 @@ if __name__ == '__main__':
 
     session = sessionmaker(bind=engine)
 
-    ar = sys.argv[4]
-
-    rows = session().query(State.id).filter(State.name == ar).first()
+    rows = session().query(State.id).filter(State.name == sys.argv[4]).first()
 
     if rows is None:
         print("Not found")
-    else:    
+    else:
         print(rows[0])
