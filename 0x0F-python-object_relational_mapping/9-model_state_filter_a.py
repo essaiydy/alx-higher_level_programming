@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-'''Write a script that lists all State objects that 
+'''Write a script that lists all State objects that
 contain the letter a from the database hbtn_0e_6_usa'''
+
 
 import sys
 from model_state import Base, State
@@ -14,7 +15,7 @@ if __name__ == '__main__':
 
     session = sessionmaker(bind=engine)
 
-    rows = session().query(State).filter(State.name=='%a%')
+    rows = session().query(State).filter(State.name == '%a%')
 
     for row in rows:
         print("{}: {}".format(row.id, row.name))
