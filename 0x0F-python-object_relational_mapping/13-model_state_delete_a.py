@@ -15,11 +15,10 @@ if __name__ == '__main__':
 
     session = sessionmaker(bind=engine)
     Session = session()
-    paterne = r'.*a.*'
-    rows = Session.query(State).all()
+    
+    rows = Session.query(State).filter(State.name.like('%a%').all()
 
     for row in rows:
-        if re.match(paterne, row.name):
-            Session.delete(row)
+        Session.delete(row)
     
     Session.commit()
